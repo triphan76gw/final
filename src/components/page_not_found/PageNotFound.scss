@@ -1,0 +1,21 @@
+.container-page-not-found {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .page-not-found-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        header {
+            font-size: 80px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .content {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: gray;
+        }
+    }
+}

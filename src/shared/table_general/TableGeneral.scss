@@ -1,0 +1,41 @@
+.table-general {
+    position: relative;
+
+    table {
+        thead {
+            tr {
+                th {
+                    position: sticky;
+                    top: 0px;
+                    &:first-child {
+                        position: sticky;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 1;
+                    }
+                    &:last-child {
+                        position: sticky;
+                        right: 0px;
+                        top: 0px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    &:first-child {
+                        position: sticky;
+                        left: 0px;
+                    }
+                    &:last-child {
+                        position: sticky;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.loading-page {
+    z-index: 9999999;
+    .preloader {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        scale: 0.4
+    }
+
+    .load-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #2F58CD;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: load1 1s linear infinite;
+    }
+
+    .load-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #2F58CD;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: load1 1.5s linear infinite;
+    }
+
+    .load-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #2F58CD;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: load1 2s linear infinite;
+    }
+// #2F58CD
+    .load-4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 70px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #2F58CD;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        background-color: transparent;
+        animation: load1 2.5s linear infinite;
+    }
+
+    .load-5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 88px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #2F58CD;
+    }
+}
+
+
+@keyframes load1 {
+    50% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

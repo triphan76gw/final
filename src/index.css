@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@layer base {
+    body {
+        @apply font-sans;
+    }
+}
+
+@layer components {
+    .box-center {
+        @apply bg-white rounded-md shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+    .btn {
+        @apply py-2 px-3 min-w-[80px] rounded
+    }
+
+    .btn-primary {
+        @apply bg-primary text-white disabled:bg-blue-600
+    }
+
+    .btn-danger {
+        @apply bg-red-600 text-white disabled:bg-red-500
+    }
+
+    .btn-secondary {
+        @apply border border-primary text-primary
+    }
+
+    .table-row {
+        @apply hover:bg-gray-400
+    }
+
+    .table-header-cell {
+        @apply text-center py-2 px-3 bg-black text-white min-w-[120px];
+    }
+
+    .table-body-cell {
+        @apply text-center py-2 px-2 group-odd:bg-gray-300 group-even:bg-white whitespace-nowrap;
+    }
+
+    .modal-from-header {
+        @apply text-2xl text-primary uppercase font-bold mx-5 border-b-2 border-primary;
+    }
+}
